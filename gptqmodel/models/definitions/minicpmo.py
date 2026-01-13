@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from ..base import BaseGPTQModel
+from ..base import BaseQModel
 
 
-class MiniCPMOGPTQ(BaseGPTQModel):
+class MiniCPMOGPTQ(BaseQModel):
     layer_type = "Qwen2DecoderLayer"
     layers_node = "llm.model.layers"
     base_modules = ["llm.model.embed_tokens", "llm.model.norm", "vpm", "apm", "tts", "audio_projection_layer",
